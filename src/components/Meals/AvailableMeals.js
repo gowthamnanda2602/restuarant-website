@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './AvailableMeals.module.css';
 import Card from '../UI/Card';
 import MealItem from './MealItem/MealItem';
+import MealItemForm from './MealItem/MealItemForm';
 
 const dummyMeals = [{
     id: 'm1',
@@ -35,7 +36,8 @@ const dummyMeals = [{
         id={meal.id}
         name={meal.name}
         description={meal.description}
-        price={meal.price} />);
+        price={meal.price} />
+      );
     return (
       <section className={classes.meals}>
         <Card>
